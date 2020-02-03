@@ -1,12 +1,10 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func main()  {
+	// cards := newDeckFromFile("my_cards1")
 	cards := newDeck()
-	fmt.Println(cards.toString())
-}
-
-func newCard() string{
-	return "Five of Spade"
+	cards.shuffle()
+	cards.print()
 }
